@@ -9,8 +9,8 @@ using namespace std;
 
 vector<string> split(string&& s, regex&& pattern)
 {
-	regex_token_iterator first(s.begin(), s.begin(), s.end(), pattern, -1);
-	regex_token_iterator last;
+	std::sregex_token_iterator first(s.begin(), s.end(), pattern, -1);
+	std::sregex_token_iterator last;
 	return vector<string>(first, last);
 }
 
