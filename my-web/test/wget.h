@@ -1,1 +1,0 @@
-void FindInfo(xmlNode *&element);
